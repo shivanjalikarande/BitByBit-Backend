@@ -11,8 +11,8 @@ This is the backend for the gamified learning platform built using **Node.js (Ex
 
 ### 2️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-username/your-backend-repo.git
-cd your-backend-repo/backend
+git clone https://github.com/shivanjalikarande/BitByBit-Backend.git
+cd BitByBit-Backend/backend
 ```
 
 ### 3️⃣ Install Dependencies
