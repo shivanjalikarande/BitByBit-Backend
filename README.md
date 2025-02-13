@@ -1,4 +1,4 @@
-# Backend - Gamified Learning Platform
+# BitByBit Backend - Gamified Learning Platform
 
 This is the backend for the gamified learning platform built using **Node.js (Express.js)** and **Firebase Firestore** as the database.
 
