@@ -18,6 +18,8 @@ cd BitByBit-Backend/backend
 ### 3️⃣ Install Dependencies
 ```sh
 npm install
+npm install firebase-admin bcryptjs jsonwebtoken express-validator
+npm install google-auth-library
 ```
 
 ### 4️⃣ Set Up Environment Variables
@@ -32,6 +34,7 @@ PORT=5000
 
 ### 5️⃣ Running the Backend Server
 ```sh
+
 node index.js
 ```
 By default, the backend will run on **http://localhost:5000**
