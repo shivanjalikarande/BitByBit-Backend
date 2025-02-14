@@ -19,6 +19,8 @@ cd BitByBit-Backend/backend
 ```sh
 npm install
 npm install firebase-admin bcryptjs jsonwebtoken express-validator
+npm install dotenv
+npm install axios
 npm install google-auth-library
 ```
 
