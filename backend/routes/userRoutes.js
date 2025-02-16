@@ -13,9 +13,17 @@ router.post("/register", async (req, res) => {
   }
 });
 
-router.get("/:userId", async (req, res) => {
-  const user = await User.getUser(req.params.userId);
-  user ? res.json(user) : res.status(404).json({ error: "User not found" });
+router.get("/:email", async (req, res) => {
+  try {
+    //console.log(`req.params.email:${req.params.email}`)
+    const user = await User.getUser(req.params.email);
+    if (!user) return res.status(404).json({ error: "User not found" });
+   // console.log(res.json(user));
+    return res.json(user);
+  } catch (error) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
 });
+
 
 module.exports = router;

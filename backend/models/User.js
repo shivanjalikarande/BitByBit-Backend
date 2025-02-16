@@ -11,8 +11,8 @@ class User {
     });
   }
 
-  static async getUser(userId) {
-    const userRef = db.collection("users").doc(userId);
+  static async getUser(email) {
+    const userRef = db.collection("users").doc(email);
     const doc = await userRef.get();
     return doc.exists ? doc.data() : null;
   }
