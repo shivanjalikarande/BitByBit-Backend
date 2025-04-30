@@ -1,8 +1,6 @@
 const express = require("express");
 const User = require("../models/User");
-
 const router = express.Router();
-
 router.post("/register", async (req, res) => {
   const { userId, email } = req.body;
   try {
@@ -24,6 +22,5 @@ router.get("/:email", async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
-
 
 module.exports = router;
